@@ -12,7 +12,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping
 
-# --- Configuration (Ensure these paths are correct) ---
+
 FEATURES_FILE = "../data/tess_variable_star_features.csv" 
 X_SEQ_FILE = "../data/X_seq_cnn_input.npy"              
 Y_SEQ_FILE = "../data/y_seq_cnn_labels.npy"              
