@@ -13,7 +13,7 @@ FEATURES_FILE = "tess_variable_star_features.csv"
 X_SEQ_FILE = "X_seq_cnn_input.npy"              
 Y_SEQ_FILE = "y_seq_cnn_labels.npy"              
 
-# --- Utility Functions ---
+
 
 def clean_lc(tic_id):
     """Downloads, cleans, and flattens a light curve."""
