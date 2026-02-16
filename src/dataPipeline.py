@@ -16,7 +16,6 @@ Y_SEQ_FILE = "y_seq_cnn_labels.npy"
 
 
 def clean_lc(tic_id):
-    """Downloads, cleans, and flattens a light curve."""
     try:
         search = lk.search_lightcurve(f"TIC {tic_id}", mission="TESS")
         lc_raw = search[0].download(flux_column='pdcsap_flux')
@@ -27,7 +26,6 @@ def clean_lc(tic_id):
         return None
 
 def extract_features(lc):
-    """Extracts statistical and frequency features."""
     flux = lc.flux.value
     time = lc.time.value
     stats = {
