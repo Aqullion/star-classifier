@@ -68,7 +68,7 @@ plt.tight_layout()
 plt.savefig('random_forest_feature_importance.png')
 plt.show()
 
-#New Part
+
 
 y_pred_rf = rf_model.predict(X_test_rf)
 
@@ -141,7 +141,7 @@ y_pred_cnn = (y_pred_cnn_probs > 0.5).astype(int)
 print("\n--- CNN Classification Report (10k Stars) ---")
 print(classification_report(y_test_cnn, y_pred_cnn, target_names=target_names))
 
-#New Part 2
+
 
 
 
